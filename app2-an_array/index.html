@@ -3,7 +3,12 @@
 		<link rel="stylesheet" href="style.css"></link>
 	</head>
 	<body ng-controller="arrayController">
-	
+		<div ng-repeat='employee in employees' class="index-tab">
+			<span><b>Employee:</b>{{employee.name}} </span>
+			<span><b>Start Date:</b>{{employee.dateEmployed}} </span>
+			<span><b>Phone:</b>{{employee.phone}} </span>
+			<span><b>Email:</b>{{employee.email}} </span>
+		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

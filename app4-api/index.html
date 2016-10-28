@@ -1,7 +1,13 @@
-<html ng-app="apiApp">
-	<body>
-		
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<html ng-app="myApp">
+	<body ng-controller='mainCtrl'>
+		number of character availble {{characters.length}}
+		<div ng-repeat='character in characters'>
+
+			<p>
+				<span>{{character.name}}</span>
+			</p>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
